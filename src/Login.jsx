@@ -18,7 +18,8 @@ export default function Login(){
             <Grid container
                   direction="row"
                   justifyContent="space-around"
-                  alignItems="center" >
+                  alignItems="center"
+                  style={{marginTop: '20px'}}>
                 <Grid>
                     <Button variant="contained" color="secondary">Sign in</Button>
                 </Grid>
