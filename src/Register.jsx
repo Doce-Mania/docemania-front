@@ -12,15 +12,15 @@ function Register(){
       <Stack spacing={2} justifyContent="center">
         <h1>Criar Conta</h1>
         <p>Nome:</p>
-        <TextField size="small" id="outlined-basic" label="Type your name" variant="outlined" />
+        <TextField size="small" id="outlined-basic" label="Digite seu nome" variant="outlined" />
         <p>E-mail:</p>
-        <TextField size="small" id="outlined-basic" label="Type your e-mail" variant="outlined" />
+        <TextField size="small" id="outlined-basic" label="Digite seu e-mail" variant="outlined" />
         <p>Telefone:</p>
-        <TextField size="small" id="outlined-basic" label="Type your phone" variant="outlined" />
+        <TextField size="small" id="outlined-basic" label="Digite seu telefone" variant="outlined" />
         <p>CPF:</p>
-        <TextField size="small" id="outlined-basic" label="Type your CPF" variant="outlined" />
+        <TextField size="small" id="outlined-basic" label="Digite seu CPF" variant="outlined" />
         <p>Senha:</p>
-        <TextField size="small" id="outlined-basic" label="Type your CPF" variant="outlined" />
+        <TextField size="small" id="outlined-basic" label="Digite sua senha " variant="outlined" />
         <Button variant="contained" color="secondary">Registrar</Button>
       </Stack>
     </Container>
