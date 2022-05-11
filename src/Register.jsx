@@ -2,11 +2,13 @@ import * as React from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import newTheme from './newTheme'
+import {ThemeProvider  } from '@mui/material/styles';
 
+const theme = newTheme();
 
-function Register(){
+export default function Register(){
   return(
     <Container maxWidth="sm">
       <Stack spacing={2} justifyContent="center">
@@ -21,9 +23,11 @@ function Register(){
         <TextField size="small" id="outlined-basic" label="Digite seu CPF" variant="outlined" />
         <p>Senha:</p>
         <TextField size="small" id="outlined-basic" label="Digite sua senha " variant="outlined" />
-        <Button variant="contained" color="secondary">Registrar</Button>
+        <ThemeProvider theme={theme}>
+          <Button variant="contained" color="primary">Registrar</Button>
+        </ThemeProvider>
       </Stack>
     </Container>
   )
 }
-export default Register;
+
