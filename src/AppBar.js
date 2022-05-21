@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -22,8 +23,8 @@ export default function ButtonAppBar() {
               justifyContent="space-between"
               alignItems="center"
             >
-            <Button ><Avatar alt="Docemania" src={logo} sx={{ width: 60, height: 60 }}/></Button>
-            <Button color="inherit">Login</Button>
+            <Button href='/' ><Avatar alt="Docemania" src={logo} sx={{ width: 60, height: 60 }}/></Button>
+            <Button color="inherit" href='/login'>Login</Button>
             </Grid>
           </Toolbar>
         </AppBar>

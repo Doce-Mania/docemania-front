@@ -7,7 +7,6 @@ import Container from '@mui/material/Container';
 import { ThemeProvider  } from '@mui/material/styles';
 import newTheme from './newTheme'
 
-
 const theme = newTheme();
 
 export default function Login(){
@@ -29,7 +28,7 @@ export default function Login(){
                 <Button variant="contained" color="primary">Entrar</Button>
               </Grid>
               <Grid>
-                <Button variant="contained" color="primary" href='./Register.jsx'>Criar Conta</Button>
+                <Button variant="contained" color="primary" href='/register'>Criar Conta</Button>
               </Grid>
             </Grid>
           </ThemeProvider>
